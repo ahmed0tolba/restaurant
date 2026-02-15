@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="author" content="Ahmed Morsy">
+    <meta name="copyright" content="© 2026 Ahmed Morsy">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="cdn/css2.css?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <link rel="stylesheet" href="cdn/bootstrap.min.css">
+    <script src="cdn/jquery-3.4.1.slim.min.js"></script>
+    <script src="cdn/popper.min.js"></script>
+    <script src="cdn/bootstrap.min.js"></script>
+    <script src="cdn/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="page-mask" id="pageMask"></div>
+    <div class="navbar1">
+        <div style="color: #666;">Free delivery for all orders over $50. Order your food now!</div>
+        <div style="display: flex;justify-content: space-between;align-items: center; gap: 3em;white-space: nowrap;">
+            <div style="color: #666;"><i aria-hidden="true" class="fa fa-envelope"></i> &nbsp; Subscribe & Get 10% Off
+            </div>
+            <div>
+                <i class="fa fa-facebook"></i> &nbsp;
+                <i class="fa fa-twitter"></i> &nbsp;
+                <i class="fa fa-instagram"></i> &nbsp;
+                <i class="fa fa-pinterest-p"></i>
+            </div>
+        </div>
+    </div>
+    <div class="navbar2">
+        <div>
+            <button class="logo-btn"><img src="images/Logo.svg"></button>
+        </div>
+        <div class="menu-items hide_less_1050">
+            <div class="menu_button_expandable" onclick="location.href=``;">Home &nbsp;<i class="fa fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="location.href=``;">Home Resteurant</div>
+                    <div class="dropdown-item" onclick="location.href=``;">Home Seafood</div>
+                    <div class="dropdown-item" onclick="location.href=``;">Home Fastfood</div>
+                </div>
+            </div>
+            <div class="menu_button_expandable" onclick="location.href=``;">Menu &nbsp;<i class="fa fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="location.href=``;">Home Resteurant</div>
+                </div>
+            </div>
+            <div class="menu_button" onclick="location.href=``;">About</div>
+            <div class="menu_button_expandable" onclick="location.href=``;">Shop &nbsp;<i class="fa fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="location.href=``;">Home Resteurant</div>
+                </div>
+            </div>
+            <div class="menu_button_expandable" onclick="location.href=``;">Blog &nbsp;<i class="fa fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="location.href=``;">Home Resteurant</div>
+                </div>
+            </div>
+            <div class="menu_button_expandable" onclick="location.href=``;">Pages &nbsp;<i class="fa fa-angle-down"></i>
+                <div class="dropdown-content">
+                    <div class="dropdown-item" onclick="location.href=``;">Home Resteurant</div>
+                </div>
+            </div>
+            <div class="menu_button_expandable" onclick="location.href=``;"><i class="fa fa-search"></i>
+            </div>
+
+        </div>
+        <div style="display: flex;justify-content: space-between;align-items: center; gap: 1em;white-space: nowrap;">
+            <div class="hide_less_1200" style="white-space: nowrap;"> <i class="fa fa-phone"></i> +1 2586 5892 </div>
+            <div class="hide_less_1050">
+                <button class="book-table-btn">BOOK
+                    A TABLE</button>
+            </div>
+        </div>
+        <button class="menu-toggle hide_more_1050" id="menuToggle" aria-label="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+
+    <aside class="side-menu" id="sideMenu">
+        <!-- inline X to close menu (above items) -->
+        <button class="menu-close-x" id="closeXInside" aria-label="close menu">✕</button>
+
+        <button class="book-table-btn">BOOK
+            A TABLE</button>
+
+        <ul class="menu-list">
+            <!-- Home (expandable) -->
+            <li class="menu-item expandable" id="itemHome">
+                <button class="menu-row">
+                    <span>Home</span>
+                    <span class="arrow-down"></span>
+                </button>
+                <ul class="submenu">
+                    <li>Foods</li>
+                    <li>Chefs</li>
+                </ul>
+            </li>
+            <!-- Menu (expandable) -->
+            <li class="menu-item expandable" id="itemMenu">
+                <button class="menu-row">
+                    <span>Menu</span>
+                    <span class="arrow-down"></span>
+                </button>
+                <ul class="submenu">
+                    <li>Breakfast</li>
+                    <li>Lunch</li>
+                    <li>Dinner</li>
+                    <li>Drinks</li>
+                </ul>
+            </li>
+            <!-- About (expandable) -->
+            <li class="menu-item expandable" id="itemAbout">
+                <button class="menu-row">
+                    <span>About</span>
+                    <span class="arrow-down"></span>
+                </button>
+                <ul class="submenu">
+                    <li>Our story</li>
+                    <li>Team</li>
+                    <li>Careers</li>
+                </ul>
+            </li>
+            <!-- Shop (expandable) -->
+            <li class="menu-item expandable" id="itemShop">
+                <button class="menu-row">
+                    <span>Shop</span>
+                    <span class="arrow-down"></span>
+                </button>
+                <ul class="submenu">
+                    <li>New arrivals</li>
+                    <li>Sale</li>
+                    <li>Gifts</li>
+                </ul>
+            </li>
+            <!-- Blog (NOT expandable) -->
+            <li class="menu-item">
+                <button class="menu-row no-arrow blog-highlight">
+                    <span>Blog</span>
+                    <!-- no triangle -->
+                </button>
+            </li>
+            <!-- Pages (expandable) -->
+            <li class="menu-item expandable" id="itemPages">
+                <button class="menu-row">
+                    <span>Pages</span>
+                    <span class="arrow-down"></span>
+                </button>
+                <ul class="submenu">
+                    <li>Documentation</li>
+                    <li>Support</li>
+                    <li>Archive</li>
+                    <li>Style guide</li>
+                </ul>
+            </li>
+        </ul>
+        <div style="white-space: nowrap;width: fit-content;margin: auto;"> <i class="fa fa-phone"></i> +1 2586 5892
+        </div>
+        <div style="width: fit-content;margin: auto;">
+            <i class="fa fa-facebook"></i> &nbsp;
+            <i class="fa fa-twitter"></i> &nbsp;
+            <i class="fa fa-instagram"></i> &nbsp;
+            <i class="fa fa-pinterest-p"></i>
+        </div>
+        <hr>
+    </aside>
+
+    <br>
+    <br>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides slide-animated">
+            <img class="icon-burger-left" src="images/icon-burger-left.svg" style="">
+            <img class="line-svg" src="images/Line.svg"
+                style="position: absolute;top:0;right: 0; width: 30%;overflow: hidden;">
+            <img class="rotating-image" src="images/icon-burger-right.svg"
+                style="position: absolute;bottom:0;right: 10%; width: 30%;overflow: hidden;">
+            <div class="container-xl" style="position: relative; padding: 0em;">
+
+                <div class="row" style="align-items: center; ">
+                    <div class="col-9 col-md-5 " style="position: relative;">
+
+                        <h1 class="slide-title">
+                            Truffle Mushroom Pizza
+                        </h1>
+                        <p class="slide-text" style="color: #666;font-size: 1.2em;margin-bottom: 1.5em;">Hand-stretched
+                            crust, wild mushrooms, creamy mozzarella and a drizzle of white truffle oil.</p>
+                        <button class="slide-button">ORDER
+                            NOW</button>
+                    </div>
+                    <div class="col-md-7" style="position: relative; ">
+
+                        <div class="image-container">
+                            <img class="swing-image" src="images/restaurant-revslider-03.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="breathing-image-container">
+                    <img class="breathing-image" src="images/Circel.png"
+                        style="position: absolute;top:0;left: 0; width: 90%;overflow: hidden;">
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides slide-animated">
+            <img class="icon-burger-left" src="images/icon-burger-left.svg" style="">
+            <img class="line-svg" src="images/Line.svg"
+                style="position: absolute;top:0;right: 0; width: 30%;overflow: hidden;">
+            <img class="rotating-image" src="images/icon-burger-right.svg"
+                style="position: absolute;bottom:0;right: 10%; width: 30%;overflow: hidden;">
+            <div class="container-xl" style="position: relative; padding: 0em;">
+
+                <div class="row" style="align-items: center; ">
+                    <div class="col-9 col-md-5 " style="position: relative;">
+
+                        <h1 class="slide-title">
+                            Grilled Salmon Bowl
+                        </h1>
+                        <p class="slide-text" style="color: #666;font-size: 1.2em;margin-bottom: 1.5em;">Fresh Atlantic
+                            salmon, quinoa, avocado, edamame and ginger-soy glaze.</p>
+                        <button class="slide-button">ORDER
+                            NOW</button>
+                    </div>
+                    <div class="col-md-7" style="position: relative; ">
+
+                        <div class="image-container">
+                            <img class="swing-image" src="images/restaurant-revslider-02.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="breathing-image-container">
+                    <img class="breathing-image" src="images/Circel.png"
+                        style="position: absolute;top:0;left: 0; width: 90%;overflow: hidden;">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mySlides slide-animated">
+            <img class="icon-burger-left" src="images/icon-burger-left.svg" style="">
+            <img class="line-svg" src="images/Line.svg"
+                style="position: absolute;top:0;right: 0; width: 30%;overflow: hidden;">
+            <img class="rotating-image" src="images/icon-burger-right.svg"
+                style="position: absolute;bottom:0;right: 10%; width: 30%;overflow: hidden;">
+            <div class="container-xl" style="position: relative; padding: 0em;">
+
+                <div class="row" style="align-items: center; ">
+                    <div class="col-9 col-md-5 " style="position: relative;">
+
+                        <h1 class="slide-title">
+                            Classic burger
+                        </h1>
+                        <p class="slide-text" style="color: #666;font-size: 1.2em;margin-bottom: 1.5em;">Angus beef,
+                            aged cheddar, caramelized onions, house sauce on a brioche bun.</p>
+                        <button class="slide-button">ORDER
+                            NOW</button>
+                    </div>
+                    <div class="col-md-7" style="position: relative; ">
+
+                        <div class="image-container">
+                            <img class="swing-image" src="images/restaurant-revslider-01.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="breathing-image-container">
+                    <img class="breathing-image" src="images/Circel.png"
+                        style="position: absolute;top:0;left: 0; width: 90%;overflow: hidden;">
+                </div>
+            </div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="our_popular_food_container">
+        <br>
+        <div>
+            <h5 class="shake-animate"> &#10084; Our Popular Food &#10084;</h5>
+        </div>
+        <div>
+            <h2 class="shake-animate" style="font-family: Forum;width: fit-content;margin: auto;">Best Category Foods
+                Menu</h2>
+        </div>
+        <div class="categories-div">
+            <div class="category-btn scroll-animate">
+                <img src="images/pizza-icon.svg">
+                <span>Pizza</span>
+            </div>
+            <div class="category-btn scroll-animate">
+                <img src="images/seafood-icon.svg">
+                <span>Seafoods</span>
+            </div>
+            <div class="category-btn scroll-animate">
+                <img src="images/burger-icon.svg">
+                <span>Burger</span>
+            </div>
+            <div class="category-btn scroll-animate">
+                <img src="images/coffee-icon.svg">
+                <span>Coffe</span>
+            </div>
+            <div class="category-btn scroll-animate">
+                <img src="images/toast-color-icon.svg">
+                <span>Bread</span>
+            </div>
+            <div class="category-btn scroll-animate">
+                <img src="images/fried-chicken-icon.svg">
+                <span>Chicken</span>
+            </div>
+            <br>
+        </div>
+        <div class="special-food scroll-animate">
+            Need any Special Food or Any Birthday Cakes? <u style="cursor: pointer;">Order Now</u>
+        </div>
+        <br>
+    </div>
+
+    <div class="container">
+        <div class="row" style="align-items: center; margin-top: 3em;position: relative;">
+            <img class="line-svg d-none d-md-block" src="images/Line.svg"
+                style="position: absolute;top:0;right: 2%; width: 50%;overflow: hidden;">
+            <div class="col-sm-12 col-md-4" style="position: relative;">
+                <h5 class="" style="font-weight: 700;margin-bottom: .5em;color: #df3f00;">
+                    About Our Restaurant
+                </h5>
+                <h3 class="" style="font-weight: 700;margin-bottom: .5em;">
+                    Authentic Italian & Modern Fusion
+                    Food and Chief Based on Italiano
+                </h3>
+                <p class="slide-text" style="color: #666;font-size: 1.2em;margin-bottom: 1.5em;">At Qichen, we bring the
+                    warmth of Tuscany to your table. From wood-fired pizzas to handmade pasta, every dish tells a story
+                    of tradition and passion.</p>
+                <button class="learn-more-btn">LEARN
+                    MORE &nbsp; 🠊</button>
+            </div>
+            <div class="d-none d-md-block col-md-4 " style="position: relative;padding: 1em;">
+                <div class="image-container">
+                    <img class="" src="images/img1-about-home-restaurant.jpg" style="width: 100%;">
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-4 " style="position: relative;padding: 1em;">
+                <div class="image-container">
+                    <img class="" src="images/img2-about-home-restaurant.jpg" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+
+        <div style="color: #df3f00;text-align: center;">
+            <h5>
+                <img src="images/leaflet-color-icon.svg" style="width: 2em;"> &nbsp; &nbsp; BEST FOOD MENU
+            </h5>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <h2 style="font-family: cursive;width:fit-content;margin: auto;">Choose Your Best Menus</h2>
+        </div>
+        <div class="container text-center">
+            <div class="row text-center" style="color: #df3f00;">
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="container-xl">
+        <div class="row">
+            <div class="d-none d-md-block col-md-4" style="position: relative;">
+                <div class="image-container">
+                    <img class="" src="images/decor-left-best-menu-restaurant.jpg" style="width: 100%;">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="container-fluid" style="height: 100%;display: grid;grid-template-rows: repeat(3, 1fr);">
+                    <div class="row ">
+                        <div class="col-md-3 col-8 text-center align-self-center mx-auto px-0">
+                            <div class="image-container col-sm-8 col-md-12 ">
+                                <img class="" src="images/product-01-300x294.png" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-12 align-self-center">
+                            <div class="row dish-name" style="  ">
+                                <div class="leftx">Deluxe Margherita Pizza</div>
+                                <div class="centerx"></div>
+                                <div class="rightx" style="position: relative;">$18.90
+                                    <div class="rightx"
+                                        style="position: absolute;top:1em;left:0;font-size: 1em;font-weight: 100;color:#666;text-decoration: line-through;">
+                                        $24.00
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="white-space: nowrap; font-size: 1.2em;"> San Marzano tomatoes, basil, bufala
+                            </div>
+                            <div><span style="color: #df3f00;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(1 Reviews)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-3 col-8 text-center align-self-center mx-auto px-0">
+                            <div class="image-container col-sm-8 col-md-12 ">
+                                <img class="" src="images/product-03-300x285.png" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-12 align-self-center">
+                            <div class="row dish-name" style="  ">
+                                <div class="leftx">Smoked Brisket Burger</div>
+                                <div class="centerx"></div>
+                                <div class="rightx">$16.50</div>
+                            </div>
+                            <div style="white-space: nowrap; font-size: 1.2em;"> Smoked brisket, pickles, chipotle aioli
+                            </div>
+                            <div><span style="color: #df3f00;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(1 Reviews)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-8 text-center align-self-center mx-auto px-0">
+                            <div class="image-container col-sm-8 col-md-12 ">
+                                <img class="" src="images/product-04-300x298.png" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-12 align-self-center">
+                            <div class="row dish-name" style="  ">
+                                <div class="leftx">Lemon Herb Chicken Board</div>
+                                <div class="centerx"></div>
+                                <div class="rightx">$22.00</div>
+                            </div>
+                            <div style="white-space: nowrap; font-size: 1.2em;"> Grilled chicken, roasted veggies,
+                                tzatziki
+                            </div>
+                            <div><span style="color: #df3f00;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(1 Reviews)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container-fluid" style="background: linear-gradient(rgba(223, 63, 0, 0.1), rgba(223, 63, 0, 0.1)),
+    url('images/bg-overlay-dot.png') top left/auto repeat;
+    padding:2em 2em">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <h5 style="color: #df3f00;">Our Chefs</h5>
+                <h2>Meet Our Exclusive
+                    & Master Chefs</h2>
+                <h5>Sit amet consectetur adipiscing elitsue risus mauris quam adipiscing phasellus aene ante orcirat
+                    scelerisque enim ut nulla</h5>
+
+                <div class="list-container">
+                    <div class="list-item">
+                        <div class="icon-column">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="text-column">
+                            25 Years of Experience in Restaurant Services in USA
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="icon-column">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="text-column">
+                            Any Kind Of Food Made for Customer and So Much Yamee $ Testy
+                        </div>
+                    </div>
+                </div>
+
+                <button class="become-chef">
+                    BECOME A CHEF &nbsp; 🠊
+                </button>
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="chef-images">
+                    <div class="chef-image-container">
+                        <img class="chef-img" src="images/home-chef-1.jpg" alt="">
+                        <div class="chef-overlay"></div>
+                        <div class="chef-info">
+                            <div class="chef-name">Marco Rossi</div>
+                            <div class="chef-title">Master Chef</div>
+                        </div>
+                    </div>
+                    <div class="chef-image-container">
+                        <img class="chef-img" src="images/home-chef-2.jpg" alt="">
+                        <div class="chef-overlay"></div>
+                        <div class="chef-info">
+                            <div class="chef-name">Elena Conti</div>
+                            <div class="chef-title">Pasta Specialist</div>
+                        </div>
+                    </div>
+                    <div class="chef-image-container">
+                        <img class="chef-img" src="images/home-chef-3.jpg" alt="">
+                        <div class="chef-overlay"></div>
+                        <div class="chef-info">
+                            <div class="chef-name">Luca Bianchi</div>
+                            <div class="chef-title">Grill Master</div>
+                        </div>
+                    </div>
+                    <div class="chef-image-container">
+                        <img class="chef-img" src="images/home-chef-4.jpg" alt="">
+                        <div class="chef-overlay"></div>
+                        <div class="chef-info">
+                            <div class="chef-name">Sofia Moreau</div>
+                            <div class="chef-title">Pastry Chef</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div class="row" style="align-items: center; margin-top: 3em;position: relative;">
+            <img class="line-svg d-none d-md-block" src="images/Line.svg"
+                style="position: absolute;top:0;left: 0; width: 50%;overflow: hidden;">
+            <div class="d-none d-md-block col-md-8 " style="position: relative;padding: 1em;">
+                <div class="image-container video-thumb">
+                    <img src="images/pexels-karola-g2-5876.jpg" alt="">
+
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" class="play-button"
+                            aria-label="Play video">
+                            <span class="pulse-ring"></span>
+                            <span class="pulse-ring ring-2"></span>
+                            <span class="play-core">
+                                &nbsp;&#x25B7;
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4" style="position: relative;">
+                <h5 class="" style="font-weight: 700;margin-bottom: .5em;color: #df3f00;">
+                    <img src="images/movie-videos-icon.svg" style="width:2em;"> &nbsp; Watch Videos
+                </h5>
+                <h3 class="" style="font-weight: 700;margin-bottom: .5em;">
+                    How We Prepare Our Signature Dishes
+                </h3>
+                <p class="slide-text" style="color: #666;font-size: 1.2em;margin-bottom: 1.5em;">From selecting the
+                    freshest ingredients to the final plating, see the passion behind every meal we serve.</p>
+
+                <div class="list-container">
+                    <div class="list-item">
+                        <div class="icon-column">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="text-column">
+                            Best Way to Serve Our Foods.
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="icon-column">
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="text-column">
+                            Low Cost & Online Orders.
+                        </div>
+                    </div>
+                </div>
+
+                <button class="watch-more-button" style="">WATCH
+                    MORE &nbsp; 🠊</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid"
+        style="background: linear-gradient(rgba(223, 63, 0, 0.1), rgba(223, 63, 0, 0.1)),url('images/bg-overlay-dot.png') top left/auto repeat;">
+        <div class="row" style="align-items: center; margin-top: 3em;position: relative;">
+            <img class="line-svg" src="images/pizza-slice.png"
+                style="position: absolute;top:20%;left: 5%; width: 25%;overflow: hidden;">
+
+            <div class="col-sm-12 col-md-6 col-lg-5" style="position: relative;">
+                <h5 class="" style="font-weight: 700;margin-bottom: .5em;color: #df3f00;">
+                    <img src="images/clock-line-icon.svg" style="width:2em;"> &nbsp; Working hour
+                </h5>
+                <h3 class="" style="font-weight: 700;margin-bottom: .5em;">
+                    Enjoy Our Foods 6 Days a Week
+                </h3>
+
+
+                <div class="work-period">
+                    Monday – Friday……..09am-6pm
+                </div>
+
+                <div class="work-period">
+                    Saturday…………………..08am-7pm
+                </div>
+
+                <div class="work-period">
+                    Sunday……………………………Closed
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-md-6 col-lg-7 px-0" style="position: relative;">
+                <img class="" src="images/pexels-karola-g2-5876.jpg" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="container" style="">
+        <div class="row" style="align-items: center; margin-top: 3em;position: relative;">
+            <img class="line-svg" src="images/Line.svg"
+                style="position: absolute;top:20%;right: 5%; width: 25%;overflow: hidden;">
+
+            <div class="d-none d-md-block col-md-6 " style="position: relative;">
+                <img class="" src="images/bg-form-home-restaurant.jpg" style="width: 100%;">
+            </div>
+
+            <div class="col-sm-12 col-md-6" style="position: relative;">
+                <h5 class="" style="font-weight: 700;margin-bottom: .5em;color: #df3f00;">
+                    <img src="images/clock-line-icon.svg" style="width:2em;"> &nbsp; BOOKING TABLE
+                </h5>
+                <h3 class="" style="font-weight: 700;margin-bottom: .5em;">
+                    Make A Reservations
+                </h3>
+                <p class="slide-text" style="color: #666;font-size: 1.2em;margin-bottom: 1.5em;">Secure your spot at
+                    Qichen. Whether it's a romantic dinner or a family celebration, we can't wait to host you.</p>
+
+
+                <div class="form-contact-us">
+                    <!-- Name field -->
+                    <div class="ova_wrap_input">
+                        <p>
+                            <span class="wpcf7-form-control-wrap" data-name="name">
+                                <input size="40" maxlength="400"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false" placeholder="Name" value="" type="text"
+                                    name="name">
+                            </span>
+                            <!-- icon uses flaticon2 class, but we attach font-awesome via pseudo -->
+                            <i aria-hidden="true" class="fa fa-user"></i>
+                        </p>
+                    </div>
+
+                    <!-- Persons (select) -->
+                    <div class="quantity-person ova_wrap_input">
+                        <p>
+                            <span class="wpcf7-form-control-wrap" data-name="your-person">
+                                <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false" name="your-person">
+                                    <option value="Persons">Persons</option>
+                                    <option value="2">2</option>
+                                    <option value="4">4</option>
+                                    <option value="8">8</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                            <i aria-hidden="true" class="fa fa-user"></i>
+                        </p>
+                    </div>
+
+                    <!-- Date field with default value 2026-02-14 -->
+                    <div class="date ova_wrap_input">
+                        <p>
+                            <span class="wpcf7-form-control-wrap" data-name="date">
+                                <input
+                                    class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date"
+                                    aria-required="true" aria-invalid="false" value="2026-02-14" type="date"
+                                    name="date">
+                            </span>
+                            <i aria-hidden="true" class="fa fa-calendar"></i>
+                        </p>
+                    </div>
+
+                    <!-- Email field -->
+                    <div class="email ova_wrap_input">
+                        <p>
+                            <span class="wpcf7-form-control-wrap" data-name="email">
+                                <input size="40" maxlength="400"
+                                    class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                    aria-required="true" aria-invalid="false" placeholder="Email" value="" type="email"
+                                    name="email">
+                            </span>
+                            <i aria-hidden="true" class="fa fa-envelope"></i>
+                        </p>
+                    </div>
+
+                    <!-- Time select -->
+                    <div class="time ova_wrap_input">
+                        <p>
+                            <span class="wpcf7-form-control-wrap" data-name="time">
+                                <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false" name="time">
+                                    <option value="Reservation Time">Reservation Time</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                </select>
+                            </span>
+                            <i aria-hidden="true" class="fa fa-clock-o"></i>
+                        </p>
+                    </div>
+
+                    <!-- submit button -->
+                    <div class="ova-submit">
+                        <p>
+                            <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
+                                value="Book A Table">
+                            <span class="wpcf7-spinner"></span>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="container-fluid"
+        style="background-color: #0E1317;text-align: center;padding: 2em 2em;position: relative;">
+        <img class="line-svg" src="images/Line.svg"
+            style="position: absolute;top:0%;left: 0%; width: 50%;overflow: hidden;">
+
+        <div class="row">
+
+            <div class="d-none d-md-block col-md-4" style="position: relative;">
+            </div>
+
+            <div class="col-sm-12 col-md-6" style="position: relative;">
+
+
+                <h5 class="" style="font-weight: 700;margin-bottom: .5em;color: #fff;">
+                    <img src="images/five-star-yellow-icon.svg" style="width:2em;"> &nbsp; FOOD REVIEWS
+                </h5>
+                <h3 class="" style="margin-bottom: .5em;color: #fff;">
+                    Global Customer Feedback
+                </h3>
+
+
+                <div class="slider-right-in-left-out">
+                    <div class="slider-container">
+                        <div class="slider-item">
+                            <div class="customer-review">
+                                <div class="customer-comment">
+                                    <p>"The best Italian food I've had outside of Rome! The truffle pasta is simply
+                                        divine."</p>
+                                </div>
+                                <div class="customer-info">
+                                    <div class="customer-item">
+                                        <img src="images/image-author3-testimonial.jpg" alt="Customer 1">
+                                    </div>
+                                    <div class="customer-item">
+                                        <div style="margin-top: .5em;font-size: 1.6em;">Isabella R.</div>
+
+                                        <div style="margin-top: .1em;">Food Lover</div>
+                                    </div>
+                                    <div class="customer-item">
+                                        <img src="images/quote-svgrepo-com.svg" alt="Quote Icon"
+                                            style="width: 5em; color: #df3f00;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item">
+                            <div class="customer-review">
+                                <div class="customer-comment">
+                                    <p>"Incredible service and the seafood risotto was perfection. Highly recommend!"
+                                    </p>
+                                </div>
+                                <div class="customer-info">
+                                    <div class="customer-item">
+                                        <img src="images/image-author3-testimonial.jpg" alt="Customer 1">
+                                    </div>
+                                    <div class="customer-item">
+                                        <div style="margin-top: .5em;font-size: 1.6em;">James K.</div>
+
+                                        <div style="margin-top: .1em;">Food Lover</div>
+                                    </div>
+                                    <div class="customer-item">
+                                        <img src="images/quote-svgrepo-com.svg" alt="Quote Icon"
+                                            style="width: 5em; color: #df3f00;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-md-2">
+                <div style="position: relative; display: flex;align-items: flex-end;height: 100%;">
+                    <img src="images/img-testimonial-home-restaurant.png" style="width: 100%;">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+
+    <div class="slider-wrapper">
+        <div class="slider-container1" id="slider1Container">
+            <div class="slider-track" id="slider1Track"></div>
+        </div>
+        <div class="slider-container1" id="slider2Container">
+            <div class="slider-track" id="slider2Track"></div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="container-fluid footer-section px-0" style="padding-bottom: 0;">
+        <div class="container-fluid " style="padding-bottom: 0;">
+            <div class="row">
+                <!-- Logo & Description -->
+                <div class="col-12 col-md-3">
+                    <button class="logo-btn">
+                        <img src="images/Logo.svg" alt="Logo">
+                    </button>
+                    <p class="description">Qichen Italiano – authentic flavors, modern passion. Since 1995.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li>About Company</li>
+                        <li>Menu</li>
+                        <li>Menu Fastfood</li>
+                        <li>Menu Seafood</li>
+                        <li>Gallery</li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="col-12 col-sm-6 col-md-2">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li>Bread</li>
+                        <li>Chicken</li>
+                        <li>Burger</li>
+                        <li>Pizza</li>
+                        <li>Seafoods</li>
+                    </ul>
+                </div>
+
+                <!-- More Products -->
+                <div class="col-12 col-sm-6 col-md-2">
+                    <ul class="footer-links extra-links">
+                        <li>Submarine Sandwich</li>
+                        <li>Chicken Biryani</li>
+                        <li>Pasta Fettuccine</li>
+                        <li>Shawarma-roll</li>
+                        <li>Norwegian Lobster</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h4 class="footer-title">Call for order:</h4>
+                    <ul class="footer-contact">
+                        <li class="phone">+1 2586 5892</li>
+                        <li class="email">hello@Qichen.com</li>
+                        <li class="address">119 Tanglewood Lane<br>Gulfport, MS 39503</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2026 Ahmed Morsy. All rights reserved.
+    </footer>
+</body>
+<script src="scripts/script.js"></script>
+<script src="scripts/whatsapp.js"></script>
+
+</html>

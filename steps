@@ -1,0 +1,12 @@
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ahmed0tolba/restaurant.git
+git push -u origin main
+
+https://github.com/ahmed0tolba/restaurant.git
+
+git add .
+git commit 
+git push --force origin main
